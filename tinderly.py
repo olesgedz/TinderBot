@@ -39,7 +39,7 @@ print("we are in")
 
 
 def log(msg):
-    print ( '[' + str(datetime.datetime.now()) + ']' + ' ' + msg)
+    print ( '[' + str(datetime.datetime.now()).encode('utf-8') +']' + ' ' + msg.encode('utf-8')) ##+ str(datetime.datetime.now()) +
 
 def like_or_nope():
     if randint(1, 100) == 31:
