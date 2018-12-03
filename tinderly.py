@@ -135,8 +135,8 @@ def message(match):
         log('No new messages from ' + name)
 
 def handle_matches():
-    log(str(len(session._api.matches())) + ' matches')
-    matches = session._api.matches()
+    log(str(len(session._api.matches(0))) + ' matches')
+    matches = session._api.matches(0)
     x = True
     for m in reversed(matches):
         message(m)
@@ -151,7 +151,6 @@ def sendAll(text):
         print ("sent")
         flag = 0;
     else:
-
         print ("already sent")
 
 
@@ -160,6 +159,6 @@ while True:
     text = "Привет, пошли сегодня на киноночь Хаяо Миядзаки в антикафе?"
     ##sendAll(text)
     handle_likes()
-    #handle_matches()
+    handle_matches()
     log('Resting for a few minutes...')
     sleep(randint(30,60))
