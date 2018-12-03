@@ -22,7 +22,6 @@ def get_access_token(email, password):
         print("Official error: %s" % ex)
         return {"error": "access token could not be retrieved. Check your username and password."}
 print ("lol")
-##FACEBOOK_AUTH_TOKEN = get_access_token("olesgedz@rambler.ru", "uPN-E39-QYz-SeP",  mobile_user_agent, fb_auth)
 ##first
-FACEBOOK_AUTH_TOKEN = get_access_token("gedzoles@gmail.com", "hikpit-topqEn-8tujdi")
+FACEBOOK_AUTH_TOKEN = get_access_token("","")
 print ("hehe1")
