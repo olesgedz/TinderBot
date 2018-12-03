@@ -11,7 +11,7 @@ import config
 import datetime
 import pynder
 from messages import messages
-from messagesbot import messagesbot
+#from messagesbot import messagesbot
 from messagesfake import messagesfake
 from messagesreal import messagesreal
 
@@ -24,7 +24,7 @@ session = pynder.Session(config.FACEBOOK_AUTH_TOKEN) #config.FACEBOOK_ID, facebo
 
 
 def log(msg):
-    print '[' + str(datetime.datetime.now()) + ']' + ' ' + msg
+    print ('[' + str(datetime.datetime.now()) + ']' + ' ' + msg)
 
 def like_or_nope():
     if randint(1, 100) == 31:
@@ -148,11 +148,11 @@ def sendAll(text):
         for i in reversed(matches):
             session._api._post('/user/matches/' + i['id'],
                                 {"message": text})
-        print "sent"
+        print ("sent")
         flag = 0;
     else:
 
-        print "already sent"
+        print ("already sent")
 
 
 
@@ -160,7 +160,6 @@ while True:
     text = "Привет, пошли сегодня на киноночь Хаяо Миядзаки в антикафе?"
     ##sendAll(text)
     handle_likes()
-    handle_matches()
+    #handle_matches()
     log('Resting for a few minutes...')
     sleep(randint(30,60))
-    
