@@ -24,5 +24,5 @@ def get_access_token(email, password):
 print ("lol")
 
 ##first
-FACEBOOK_AUTH_TOKEN = get_access_token("gedzoles@gmail.com", "hikpit-topqEn-8tujdi")
+FACEBOOK_AUTH_TOKEN = get_access_token()
 print ("hehe")
