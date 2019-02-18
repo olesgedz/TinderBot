@@ -8,7 +8,6 @@ messages = [
     [u'Да, звучит неплохо, вот чат ботов писать люблю, темными холодными вечерами.'],
     [u'Пошли кофе пить!'],
     [u'Где обычно его пьешь? ._.'],
-    [u'Окей-окей, сейчас моего создателя позову  хД
-        а я живу вот здесь  https://github.com/olesgedz/TinderBot/blob/master/messages.py'],
+    [u'Окей-окей, сейчас моего создателя позову  хД \n а я живу вот здесь  https://github.com/olesgedz/TinderBot/blob/master/messages.py'],
 
 ]
